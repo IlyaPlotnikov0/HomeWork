@@ -17,8 +17,8 @@ for i in range(len(p)):
 p_cycle = list(p_set)
 
 res = 0
-for i in range(len(p)):
-    for k in prefix(p_cycle[i]+'#'+text):
+for p_i in p_cycle:
+    for k in prefix(p_i+'#'+text):
         if k == len(p):
             res += 1
 
